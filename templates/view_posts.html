@@ -1,0 +1,22 @@
+{% extends 'homepage.html' %}
+{% block content %}
+    <center>
+   <div class="container">
+    <h1><center>IOT BLOG POSTS</center></h1>
+    {% for i in posts %}
+    <div class="post">
+        <p class="hi">
+        <h2><u>{{i[1]}}</u></h2>
+        <p class="hi1">{{i[2]}}</p>
+        <p CLASS="hlo">{{i[4]}}</p>
+        <p class="hi2">posted at:{{i[3]}}</p></p>
+        <form method="post" action="{{url_for('delete',id=i[0])}}" onsubmit="return confirm('Are you sure you want to delete this post');">
+        <button> Delete</button>
+        </form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form method="GET" action="{{url_for('update_post',id=i[0])}}" onsubmit="return confirm('Are you sure you want to update this post');">
+        <button class="btn">Edit</button>
+        </form>
+    </div>
+    {% endfor %}
+</div></center>
+{% endblock %}

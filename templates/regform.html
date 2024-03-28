@@ -1,0 +1,33 @@
+{% extends 'homepage.html' %}
+{% block content %}
+<div class="container">
+    <center><div class="div">
+    <h1>REGISTRATION FORM</h1>
+    <form method="POST">
+        <p class="hi4">
+        <b>Name:</b><input style="
+        margin: 8px 0;
+       " type="text" name="name" placeholder="enter your name" size="25px"/><br>
+        <b>mobile:</b><input style="
+        margin: 8px 0;
+        box-sizing: border-box;" type="tel" name="mobile" placeholder="contact number" size="25px"/><br>
+        <b>Email:</b><input style="
+        margin: 8px 0;
+        box-sizing: border-box;" type="text" name="email" placeholder="enter your email_id" size="25px"/><br>
+        <b>Address:</b><input style="
+        margin: 8px 0;
+        box-sizing: border-box;" type="text" name="address" size="25px"/><br>
+        <b>password:</b><input style="
+        margin: 8px 0;
+        box-sizing: border-box;" type="text" name="password" size="25px"/><br>
+       <input type="submit" value="SUBMIT" style="background-color: greenyellow;
+       border: none;
+       color: orchid;
+       padding: 15px 32px;
+       text-align: center;
+       text-decoration: navy;
+       display: inline-block;
+       font-size: 16px;" >
+    </form></div></center>
+</div>
+    {% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'homepage.html' %}
+{% block content %}
+<div class="container">
+<center><div class="div">
+    <h1><u>OTP</u></h1>
+    <form method="post" action="{{url_for('otp',name=name,mobile=mobile,email=email,address=address,password=password,otp=otp)}}">
+        <p class="hi4">Enter OTP:</p><input style="
+        margin: 8px 0;" name="uotp" type="text" placeholder="enter otp">
+        <br>
+        <input type="submit" value="SUBMIT" style="background-color: greenyellow;
+        border: none;
+        color: orchid;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: navy;
+        display: inline-block;
+        font-size: 16px;">
+    </form></div>
+</center></div>
+    {% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'homepage.html' %}
+{% block content %}
+<center><div class="div">
+    <form action="" method="POST">
+        <p class="hi4">Title:<input type="text" name="title" value="{{post[1]}}"><br>
+        Content:<textarea name="content" rows="5" value="">{{post[2]}}</textarea><br>
+        Slug:<input type="text" name="slug" value="{{post[4]}}"><br>
+        <button>Update Post</button></p>
+    </form></div>
+</center>
+
+{% endblock %}
